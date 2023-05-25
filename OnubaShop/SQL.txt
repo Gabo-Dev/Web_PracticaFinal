@@ -1,0 +1,9 @@
+CREATE TABLE Usuarios (    
+   id INT not null primary key
+        GENERATED ALWAYS AS IDENTITY
+        (START WITH 1, INCREMENT BY 1),   
+   nombre VARCHAR(40) not null,
+   edad INT
+   email VARCHAR(250) NOT NULL UNIQUE,
+   clave VARCHAR(50) not null
+);
